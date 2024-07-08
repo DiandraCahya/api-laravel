@@ -76,7 +76,7 @@ class MahasiswaController extends Controller
             'jenis_kelamin' => 'required|in:Laki-laki,Perempuan',
         ]);
 
-        $murid->save($validatedData);
+        $murid->update($validatedData);
 
         return response()->json([
             'status' => true,
